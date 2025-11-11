@@ -1,4 +1,4 @@
-package com.sergey;
+package com.sergey.benchmark;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

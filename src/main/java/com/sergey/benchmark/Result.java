@@ -1,4 +1,4 @@
-package com.sergey;
+package com.sergey.benchmark;
 
 /**
  * Класс для хранения результатов одного теста производительности

@@ -1,4 +1,4 @@
-package com.sergey;
+package com.sergey.benchmark;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

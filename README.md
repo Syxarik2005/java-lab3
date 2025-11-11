@@ -23,9 +23,32 @@
     *   **Способ 1 (Рекомендуемый):** Открыть проект в любой IDE, поддерживающей Maven (например, IntelliJ IDEA), и запустить метод `main` в классе `Main.java`.
     *   **Способ 2 (Командная строка):** Выполнить команду Maven, которая скомпилирует и запустит программу.
         ```bash
-        mvn compile exec:java -Dexec.mainClass="com.sergey.Main"
+        mvn compile exec:java -Dexec.mainClass="com.sergey.benchmark.Main"
         ```
 
+## Структура проекта
+
+```
+collection-performance/
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── sergey/
+│   │               └── benchmark/
+│   │                   ├── Main.java              # Главный класс для запуска тестов
+│   │                   ├── PerformanceTester.java # Класс с логикой проведения тестов
+│   │                   └── Result.java            # Класс для хранения результатов
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── sergey/
+│                   └── benchmark/
+│                       └── ResultTest.java        # Unit-тесты для класса Result
+├── .gitignore
+├── pom.xml                                        # Конфигурация Maven
+└── README.md                                      # Документация проекта```
+```
 ## Результаты тестов и их анализ
 
 Ниже представлены реальные результаты выполнения тестов. Время указано в миллисекундах (ms).
