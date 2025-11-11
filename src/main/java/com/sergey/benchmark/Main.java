@@ -5,11 +5,20 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Главный класс для запуска тестов производительности коллекций
+ * Главный класс для запуска тестов производительности коллекций.
+ * Оркестрирует выполнение тестов и выводит итоговый отчет в консоль.
+ *
+ * @author Белявцев Сергей
+ * @version 1.0
+ * @see PerformanceTester
  */
 public class Main {
     private static final int OPERATIONS_COUNT = 100_000;
 
+    /**
+     * Точка входа в приложение.
+     * @param args Аргументы командной строки (не используются)
+     */
     public static void main(String[] args) {
         PerformanceTester tester = new PerformanceTester(OPERATIONS_COUNT);
 

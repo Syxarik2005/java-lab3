@@ -4,8 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Класс для проведения тестов производительности.
- * Создает список объектов Result с результатами тестов.
+ * Класс, отвечающий за проведение тестов производительности для реализаций интерфейса List
+ *
+ * @author Белявцев Сергей
+ * @version 1.0
+ * @see Result
+ * @see Main
  */
 public class PerformanceTester {
 
@@ -13,8 +17,8 @@ public class PerformanceTester {
     private final Object element = new Object();
 
     /**
-     * Создает тестер производительности.
-     * @param operationsCount базовое количество операций для быстрых тестов.
+     * Создает тестер производительности
+     * @param operationsCount Базовое количество операций для быстрых тестов
      */
     public PerformanceTester(int operationsCount) {
         this.operationsCount = operationsCount;
@@ -22,8 +26,8 @@ public class PerformanceTester {
 
     /**
      * Проводит серию из 9 тестов производительности для конкретной реализации List
-     * @param list экземпляр списка
-     * @return Список объектов Result с результатами тестов
+     * @param list экземпляр списка для тестирования
+     * @return Список объектов {@link Result} с результатами тестов
      */
     public List<Result> test(List<Object> list) {
         List<Result> results = new ArrayList<>();
