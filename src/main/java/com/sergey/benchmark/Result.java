@@ -39,7 +39,6 @@ public class Result {
      * Возвращает количество выполненных операций.
      * @return Количество операций.
      */
-    public int g
     public int getCount() {
         return count;
     }
