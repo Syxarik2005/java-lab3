@@ -25,6 +25,15 @@
         ```bash
         mvn compile exec:java -Dexec.mainClass="com.sergey.benchmark.Main"
         ```
+3.  **Генерация документации:**
+    Эта команда сгенерирует Javadoc-документацию в папке `target/site/apidocs`.
+    ```bash
+    mvn javadoc:javadoc
+    ```
+4. **Запуск тестов (Unit-тестов):**
+    ```bash
+    mvn test
+    ```
 
 ## Структура проекта
 
